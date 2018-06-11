@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Survey Form</title>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id="title">Survey Form</h1>
+  </header>
+  <main>
+    <p id="description">Survey form for FreeCodeCamp challenges. Made for my June Speedrun</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" name="name" id="name" placeholder="John Doe" required>
+      <label for="email" id="email-label">Email</label>
+      <input type="email" name="email" id="email" placeholder="name@domain.com" required>
+      <label for="number" id="number-label">Age</label>
+      <input type="number" name="age" id="number" required min=10 max=99 placeholder=18>
+      <fieldset>
+        <legend>Gender</legend>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+      </fieldset>
+      <fieldset>
+        <legend>Skills</legend>
+        <label for="html">HTML5</label>
+        <input type="checkbox" name="skills" id="html" value="html">
+        <label for="css">CSS3</label>
+        <input type="checkbox" name="skills" id="css" value="css">
+        <label for="javascript">HTML</label>
+        <input type="checkbox" name="skills" id="javascript" value="javascript">
+        <label for="java">Java</label>
+        <input type="checkbox" name="skills" id="java" value="java">
+        <label for="c#">C#</label>
+        <input type="checkbox" name="skills" id="c#" value="csharp">
+      </fieldset>
+      <label for="dropdown">Choose when you prefer to work</label>
+      <select name="worktime" id="dropdown">
+        <option value="morning">Mornings</option>
+        <option value="afternoons">Afternoons</option>
+        <option value="nights">Nights</option>        
+      </select>
+
+      <label for="comments">Additional comments</label>
+      <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+      <input type="submit" value="Submit" id="submit">
+    </form>
+  </main>
+  <footer>
+    &copy; 2018 - Roberto Notario
+  </footer>
+</body>
+</html>

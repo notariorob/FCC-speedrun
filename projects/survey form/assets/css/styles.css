@@ -1,0 +1,35 @@
+body {
+  background-color: hsl(240, 50%, 90%);
+  margin: 0;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  border-radius: 1rem;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+footer {
+  padding: 1rem;
+}
+
+#description {
+  text-align: center;
+}
+
+input[type="submit"] {
+  border: none;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px gray;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 4px gray;
+}
