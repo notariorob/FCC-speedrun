@@ -1,0 +1,60 @@
+html {
+  height: 100vh;
+}
+
+body {
+  font-size: 16px;
+  height: 100vh;
+  margin: 0;
+
+  /* color variables */
+  --medium-gray: #6a6a6a;
+  --light-gray: hsl(0, 10%, 80%);
+
+}
+
+header {
+  align-items: center;
+  background-color: var(--medium-gray, #6a6a6a);
+  box-shadow: 0 3px 6px var(--medium-gray, #6a6a6a);
+  color: white;
+  display: flex;
+  padding: 1rem;
+  position: relative; /* To be able to show shadow */
+  text-align: center;
+}
+
+header .logo {
+  text-align: center;
+  flex-grow: 0;
+}
+
+header .title {
+  flex-grow: 1;
+}
+
+main {
+  background: linear-gradient(white, var(--light-gray, #6a6a6a));
+  padding: 1rem 2rem;
+}
+
+figure {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  border: 1px solid var(--medium-gray, #6a6a6a);
+  border-radius: 1rem;
+  box-shadow: 1px 0px 5px var(--medium-gray, #6a6a6a);  
+  display: block;
+  margin: 1rem;
+  max-width: 100%;
+}
+
+footer {
+  background-color: var(--medium-gray, #6a6a6a);
+  color: hsla(0, 30%, 100%, 1);
+  padding: 1rem;
+}
